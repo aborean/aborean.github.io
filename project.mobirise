@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Aborean",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/aborean.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://aborean.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://aborean.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "yv0kuegikh",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Aborean | Aborean Finance | Home",
+        "meta_descr": "We are Aborean,a decentralised liquidity layer built for Abstract. Designed to move capital faster, route trades smarter, and align incentives to drive real network growth.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/aborean-finance.png\" alt=\"Aborean\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "v1WatSZAol",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#edefeb"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#232323\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Aborean Finance: Navigating the Future of Decentralized Finance</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  As decentralized finance (DeFi) continues to reshape the financial landscape, innovative platforms are emerging to provide users with efficient, secure, and accessible financial services. One such platform is <a href=\"https://aborean.github.io/\" class=\"text-secondary\">Aborean Finance</a>, designed to offer a comprehensive suite of DeFi solutions. With a focus on user experience, sustainability, and community engagement, Aborean Finance aims to empower users to take control of their financial destinies. This article explores Aborean Finance’s vision, key features, benefits, challenges, and its potential impact on the DeFi ecosystem.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Aborean Finance?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Overview<br><a href=\"https://app.aborean.finance/\" class=\"text-secondary\">Aborean Finance</a> is a decentralized finance platform that provides a variety of financial services, including lending, borrowing, yield farming, and token trading. Built on a robust blockchain infrastructure, Aborean Finance enables users to access financial products without the need for intermediaries, ensuring a trustless and efficient experience. The platform's design caters to both novice and experienced users, making it easy for anyone to participate in the DeFi space.<br><br>Vision and Mission<br>The vision of Aborean Finance is to create a sustainable and inclusive financial ecosystem that empowers individuals to manage their assets effectively. Its mission is to democratize access to financial services by providing tools that are user-friendly, secure, and designed for everyone, regardless of their financial background.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Aborean Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. User-Centric Interface<br>Aborean Finance features a clean and intuitive user interface, ensuring that users can easily navigate the platform. From lending and borrowing to yield farming and token swaps, the design prioritizes user experience, making it accessible to all.<br><br>2. Decentralized Lending and Borrowing<br>The platform allows users to lend their assets and earn interest or borrow against their holdings without relying on traditional credit assessments. This decentralized lending and borrowing mechanism provides users with greater financial flexibility and autonomy.<br><br>3. Yield Farming Opportunities<br>Aborean Finance offers yield farming, enabling users to stake their assets in liquidity pools and earn rewards. This feature incentivizes users to contribute liquidity to the platform while maximizing their returns.<br><br>4. Token Swapping<br>With an integrated token swap feature, users can easily exchange one cryptocurrency for another within the platform. This functionality streamlines the trading process and allows users to capitalize on market opportunities quickly.<br><br>5. Cross-Chain Compatibility<br>Aborean Finance supports multiple blockchain networks, enhancing its interoperability. This multi-chain support allows users to interact with various assets and DeFi protocols, broadening the financial opportunities available.<br><br>6. Robust Security Measures<br>Security is a top priority for Aborean Finance. The platform employs industry-standard security practices, including smart contract audits and multi-signature wallets, to safeguard user funds and ensure a secure trading environment.<br><br>7. Community Governance<br>Aborean Finance utilizes a decentralized governance model, allowing users to participate in decision-making processes. Token holders can propose and vote on changes to the platform, ensuring that the community has a voice in its development.<br><br>8. Educational Resources<br>To empower users, Aborean Finance provides a range of educational resources, including tutorials and market analyses. These resources help users navigate the DeFi landscape and make informed decisions.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Using Aborean Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Financial Empowerment<br>Aborean Finance empowers users by providing a decentralized platform where they can manage their assets without intermediaries. This control fosters financial independence and encourages users to take charge of their financial futures.<br><br>2. Attractive Yield Opportunities<br>Through yield farming and liquidity provision, users can earn attractive returns on their investments. The platform's focus on maximizing yields incentivizes participation and enhances overall liquidity.<br><br>3. Cost-Effective Transactions<br>Aborean Finance aims to keep transaction fees low, making it an affordable option for users engaging in DeFi activities. This cost-effectiveness is particularly beneficial for frequent traders and investors.<br><br>4. Enhanced Security<br>With robust security measures in place, Aborean Finance provides users with peace of mind knowing their funds are protected. The platform’s commitment to security helps build trust and encourages broader adoption.<br><br>5. Community-Driven Development<br>The decentralized governance model promotes community engagement and participation. Users have a say in the platform's direction, fostering a sense of ownership and collaboration among participants.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Get Started with Aborean Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Step 1: Create an Account<br>To begin using Aborean Finance, users need to create an account by visiting the official website. The registration process is straightforward and requires minimal information.<br><br>Step 2: Connect a Wallet<br>Once registered, users should connect a compatible cryptocurrency wallet, such as MetaMask or a hardware wallet. This connection allows users to manage their assets securely and interact with the platform.<br><br>Step 3: Fund Your Wallet<br>Users can fund their wallets by purchasing cryptocurrencies from exchanges and transferring them to their Aborean Finance wallet. Supported assets may include popular cryptocurrencies like ETH, BTC, and stablecoins.<br><br>Step 4: Explore Features<br>With funds in their wallets, users can explore the various features of Aborean Finance, including lending, borrowing, yield farming, and token swapping. The user-friendly interface makes navigation easy and intuitive.<br><br>Step 5: Engage with the Community<br>Users are encouraged to engage with the Aborean Finance community via social media and forums. This engagement fosters collaboration and knowledge-sharing among users, enhancing everyone’s experience.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Market Volatility<br>The cryptocurrency market is known for its volatility, which can impact the value of assets held on Aborean Finance. Users must exercise caution and implement risk management strategies to mitigate potential losses.<br><br>2. Complexity of DeFi Products<br>While Aborean Finance aims to simplify the user experience, newcomers may still face a learning curve in understanding DeFi concepts such as liquidity pools, yield farming, and decentralized governance.<br><br>3. Security Risks<br>Despite robust security measures, users must remain vigilant and practice good security hygiene. This includes safeguarding private keys and being cautious of phishing attempts and scams.<br><br>4. Regulatory Environment<br>As the DeFi landscape continues to evolve, regulatory scrutiny may increase. Aborean Finance must navigate this changing environment to ensure compliance and maintain user trust.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Aborean Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Expanding Product Offerings<br>To stay competitive, Aborean Finance may introduce new financial products and features that enhance user experience. Potential additions could include advanced trading tools, analytics, and integrations with other DeFi protocols.<br><br>2. Increased User Education<br>Aborean Finance could expand its educational resources to better equip users with the knowledge they need to navigate the DeFi landscape. This could include tutorials, webinars, and community events.<br><br>3. Enhanced Security Protocols<br>As security threats evolve, Aborean Finance must remain vigilant in enhancing its security protocols. Implementing advanced encryption techniques and conducting regular audits can help protect user assets.<br><br>4. Institutional Partnerships<br>Aborean Finance may focus on establishing partnerships with institutional investors to offer tailored solutions that meet their specific needs. This could include enhanced support, security measures, and analytics.<br><br>5. Global Expansion<br>As DeFi continues to gain traction globally, Aborean Finance may explore opportunities for expansion into new markets. This expansion could involve local partnerships and adaptations to meet regional regulatory requirements.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aborean Finance represents a significant advancement in the decentralized finance ecosystem, offering users a powerful platform to access a wide range of financial services. With its focus on user experience, security, and community engagement, Aborean Finance is well-positioned to drive the adoption of DeFi.<br><br>As the platform continues to evolve and adapt to the needs of its users, it holds the potential to reshape how individuals and institutions interact with financial services. Whether you are a retail investor, liquidity provider, or institutional participant, Aborean Finance provides the tools and resources needed to navigate the complexities of decentralized finance.<br><br>In a world where financial sovereignty and innovation are increasingly valued, Aborean Finance exemplifies the potential of blockchain technology to empower users and create a more inclusive financial ecosystem. Embrace the opportunities that Aborean Finance offers, and embark on your journey into the future of decentralized finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "v1Wau7mTjQ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
